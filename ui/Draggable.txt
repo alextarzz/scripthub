@@ -655,6 +655,30 @@ function OrionLib:MakeWindow(WindowConfig)
 	AddConnection(CloseBtn.MouseButton1Up, function()
 		MainWindow.Visible = false
 		UIHidden = true
+                local ScreenGui = Instance.new("ScreenGui")
+local Toggle = Instance.new("TextButton")
+local Corner = Instance.new("UICorner")
+
+ScreenGui.Name = "ScreenGui"
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ResetOnSpawn = false
+ 
+Toggle.Name = "Toggle"
+Toggle.Parent = ScreenGui
+Toggle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Toggle.Position = UDim2.new(0, 0, 0.454706937, 0)
+Toggle.Size = UDim2.new(0, 90, 0, 38)
+Toggle.Font = Enum.Font.SourceSans
+Toggle.Text = "Open"
+Toggle.TextColor3 = Color3.fromRGB(255, 0, 0)
+Toggle.TextSize = 25.000
+Toggle.Draggable = true
+Toggle.MouseButton1Click:connect(function()
+    game:GetService("VirtualInputManager"):SendKeyEvent(true, "RightShift" , false , game)
+end)
+ 
+Corner.Name = "Corner"
+Corner.Parent = Toggle
 		OrionLib:MakeNotification({
 			Name = "Advanced Scripthub",
 			Content = "Tap the Open button to reopen the interface.",
