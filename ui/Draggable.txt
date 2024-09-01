@@ -657,7 +657,7 @@ function OrionLib:MakeWindow(WindowConfig)
 		UIHidden = true
 		OrionLib:MakeNotification({
 			Name = "Advanced Scripthub",
-			Content = "Tap the toggle button to reopen the interface.",
+			Content = "Tap the Open button to reopen the interface.",
 			Time = 5
 		})
 		WindowConfig.CloseCallback()
