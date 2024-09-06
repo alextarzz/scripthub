@@ -4,7 +4,7 @@
   / /  / _ \/ __ \/ /_/ / ___/ __ \/ __/ _ \/ ___/ __/ __ \/ ___/
  / /__/  __/ / / / ____/ /  / /_/ / /_/  __/ /__/ /_/ /_/ / /    
 /____/\___/_/ /_/_/   /_/   \____/\__/\___/\___/\__/\____/_/     
-Zen Protector Made by YoungAOS Version 104.4 [File name: loader-pvp.lua]
+Zen Protector Made by Mannuhd Version 104.4 [File name: loader-pvp.lua]
 This file has been protected & licensed using Zen Protector V104.4 .
 Using this file to load the script will not work, please use the loadstring.
 ]]--
