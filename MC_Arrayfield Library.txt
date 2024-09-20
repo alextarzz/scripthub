@@ -860,7 +860,7 @@ function Hide()
 	Debounce = true
 	if not hasHidden then
 		hasHidden = true
-		ArrayFieldLibrary:Notify({Title = "Interface Hidden", Content = "The interface has been hidden, you can unhide the interface by tapping RightShift", Duration = 10})
+		ArrayFieldLibrary:Notify({Title = "Interface Hidden", Content = "The interface has been hidden, you can unhide the interface by tapping the Toggle button.", Duration = 10})
 		--delay(60, function() hasHidden = false end)
 	end
 	TweenService:Create(Main, TweenInfo.new(0.5, Enum.EasingStyle.Quint), {Size = UDim2.new(0, 470, 0, 400)}):Play()
@@ -1220,9 +1220,9 @@ function ArrayFieldLibrary:CreateWindow(Settings)
 	Main.Shadow.Image.ImageTransparency = 1
 	LoadingFrame.Version.TextTransparency = 1
 	LoadingFrame.Title.Text = Settings.LoadingTitle or "Arrayfield Interface Suite"
-	LoadingFrame.Subtitle.Text = Settings.LoadingSubtitle or "by Sirius | Meta"
+	LoadingFrame.Subtitle.Text = Settings.LoadingSubtitle or "by Zen Team | youngaos"
 	if Settings.LoadingTitle ~= "Arrayfield Interface Suite" then
-		LoadingFrame.Version.Text = "Arrayfield UI"
+		LoadingFrame.Version.Text = "Property of the Zen Team"
 	end
 	Topbar.Visible = false
 	Elements.Visible = false
